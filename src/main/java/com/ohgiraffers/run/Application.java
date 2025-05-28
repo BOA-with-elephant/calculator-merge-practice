@@ -1,8 +1,11 @@
 package com.ohgiraffers.run;
 
 
+import com.ohgiraffers.divide.DivideTest;
+import com.ohgiraffers.minus.Subtract;
 import com.ohgiraffers.multiple.Multiple;
 import com.ohgiraffers.left.Left;
+import com.ohgiraffers.sum.Sum;
 
 
 import java.util.Scanner;
@@ -17,10 +20,20 @@ public class Application {
         System.out.print("두 번재 숫자를 입력하세요 : ");
         int secondNum = sc.nextInt();
 
+        Sum sum = new Sum();
+        System.out.println("더하기 한 결과는 : " + sum.addNumbers(firstNum, secondNum)+ " 입니다.");
+
+        Subtract subtract = new Subtract();
+        System.out.println("빼기 한 결과는 : " + subtract.subtractNumbers(firstNum, secondNum)+ " 입니다.");
+
+        DivideTest divideTest = new DivideTest();
+        divideTest.divideTwoNum(firstNum, secondNum);
+
         Multiple multiple = new Multiple();
         multiple.calMultiple(firstNum, secondNum);
 
-        System.out.println("나누기한 나머지 결과는 : " + (left.divisionNumbers(a, b)) + " 입니다.");
+        Left left = new Left();
+        System.out.println("나누기한 나머지 결과는 : " + (left.divisionNumbers(firstNum, secondNum)) + " 입니다.");
 
     }
 
