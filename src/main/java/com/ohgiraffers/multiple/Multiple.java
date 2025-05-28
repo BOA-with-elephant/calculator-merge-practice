@@ -8,7 +8,7 @@ public class Multiple {
 
         result = fisrNum * secondNum;
 
-        System.out.println("result = " + result);
+        System.out.println("곱셈 한 결과는 : "  + result + " 입니다.");
         
     }
 
