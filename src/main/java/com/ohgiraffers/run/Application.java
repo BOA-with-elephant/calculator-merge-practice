@@ -1,6 +1,9 @@
 package com.ohgiraffers.run;
 
+
 import com.ohgiraffers.multiple.Multiple;
+import com.ohgiraffers.left.Left;
+
 
 import java.util.Scanner;
 
@@ -17,6 +20,7 @@ public class Application {
         Multiple multiple = new Multiple();
         multiple.calMultiple(firstNum, secondNum);
 
+        System.out.println("나누기한 나머지 결과는 : " + (left.divisionNumbers(a, b)) + " 입니다.");
 
     }
 
